@@ -1,6 +1,6 @@
 {
   "name": "isotope-layout",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Filter and sort magical layouts",
   "main": "js/isotope.js",
   "files": [
@@ -53,6 +53,6 @@
     "sort",
     "jquery-plugin"
   ],
-  "author": "Metafizzy",
+  "author": "Metafizzy and bros",
   "license": "GPL-3.0"
 }

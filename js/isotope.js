@@ -1,10 +1,10 @@
 /*!
- * Isotope v3.0.6
+ * Isotope v3.0.7
  *
  * Licensed GPLv3 for open source use
  * or Isotope Commercial License for commercial use
  *
- * https://isotope.metafizzy.co
+ * https://isotope.metafizzy.co & BROS
  * Copyright 2010-2018 Metafizzy
  */
 
@@ -192,6 +192,12 @@ var trim = String.prototype.trim ?
   proto._hideReveal = function( filtered ) {
     this.reveal( filtered.needReveal );
     this.hide( filtered.needHide );
+    filtered.needHide.forEach(function (item, index, array) {
+      item.element.classList.add('isotope-hidden');
+    });
+    filtered.needReveal.forEach(function (item) {
+      item.element.classList.remove('isotope-hidden');
+    });
   };
 
   // HACK
